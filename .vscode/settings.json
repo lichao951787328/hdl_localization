@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "plyconfig.json": "jsonc"
+    },
+    "python.autoComplete.extraPaths": [
+        "/home/bhr/catkin_localization/devel/lib/python3/dist-packages",
+        "/home/bhr/realsense/devel/lib/python3/dist-packages",
+        "/home/bhr/youyi_nav/devel/lib/python3/dist-packages",
+        "/home/bhr/catkin_velodyne/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/bhr/catkin_localization/devel/lib/python3/dist-packages",
+        "/home/bhr/realsense/devel/lib/python3/dist-packages",
+        "/home/bhr/youyi_nav/devel/lib/python3/dist-packages",
+        "/home/bhr/catkin_velodyne/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/bhr/catkin_localization/devel/include/**",
+        "/home/bhr/realsense/devel/include/**",
+        "/home/bhr/youyi_nav/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/bhr/catkin_velodyne/devel/include/**",
+        "/home/bhr/youyi_nav/src/navigation/client_and_server/include/**",
+        "/home/bhr/youyi_nav/src/extract_depth_image/include/**",
+        "/home/bhr/youyi_nav/src/fast_gicp/include/**",
+        "/home/bhr/youyi_nav/src/FAST_LIO/include/**",
+        "/home/bhr/youyi_nav/src/hdl_localization_mapping/hdl_global_localization/include/**",
+        "/home/bhr/catkin_localization/src/hdl_localization/include/**",
+        "/home/bhr/youyi_nav/src/hdl_localization_mapping/hybrid_astar_planner/include/**",
+        "/home/bhr/youyi_nav/src/hdl_localization_mapping/Mapping/include/**",
+        "/home/bhr/youyi_nav/src/ndt_omp/include/**",
+        "/home/bhr/youyi_nav/src/plane_detect_and_pub/include/**",
+        "/home/bhr/youyi_nav/src/plane_detect_and_stitch/include/**",
+        "/home/bhr/realsense/src/realsense-ros/realsense2_camera/include/**",
+        "/home/bhr/youyi_nav/src/use_Lucid/include/**",
+        "/home/bhr/catkin_velodyne/src/velodyne/velodyne_driver/include/**",
+        "/home/bhr/catkin_velodyne/src/velodyne/velodyne_laserscan/include/**",
+        "/home/bhr/catkin_velodyne/src/velodyne/velodyne_pcl/include/**",
+        "/home/bhr/catkin_velodyne/src/velodyne/velodyne_pointcloud/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
