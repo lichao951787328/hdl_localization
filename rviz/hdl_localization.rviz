@@ -6,10 +6,12 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /TF1
         - /PointCloud22
         - /PointCloud23
         - /MarkerArray1/Namespaces1
-        - /落脚点1
+        - /footsteps1
+        - /opt_global_guid_line1
       Splitter Ratio: 0.2646239697933197
     Tree Height: 1063
   - Class: rviz/Selection
@@ -81,9 +83,9 @@ Visualization Manager:
       Marker Alpha: 1
       Marker Scale: 4
       Name: TF
-      Show Arrows: true
+      Show Arrows: false
       Show Axes: true
-      Show Names: true
+      Show Names: false
       Tree:
         map:
           base_world:
@@ -333,7 +335,7 @@ Visualization Manager:
       Max Intensity: 10
       Min Color: 0; 0; 0
       Min Intensity: 0
-      Name: 全局地图
+      Name: globalmap
       Show Grid Lines: true
       Topic: /global_map
       Unreliable: false
@@ -382,7 +384,7 @@ Visualization Manager:
       Max Intensity: 10
       Min Color: 0; 0; 0
       Min Intensity: 0
-      Name: 局部地图
+      Name: localmap
       Show Grid Lines: true
       Topic: /localmap
       Unreliable: false
@@ -391,7 +393,7 @@ Visualization Manager:
     - Class: rviz/MarkerArray
       Enabled: true
       Marker Topic: /footstepsvisual
-      Name: 落脚点
+      Name: footsteps
       Namespaces:
         left_foot: true
         right_foot: true
@@ -407,7 +409,31 @@ Visualization Manager:
       Length: 0.30000001192092896
       Line Style: Lines
       Line Width: 0.029999999329447746
-      Name: Path
+      Name: opt_global_guid_line
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Queue Size: 10
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /smooth_path
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: raw_global_guid_line
       Offset:
         X: 0
         Y: 0
@@ -458,10 +484,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 135.5234832763672
+      Scale: 78.6965103149414
       Target Frame: <Fixed Frame>
-      X: 2.226126194000244
-      Y: 0.6676931977272034
+      X: 1.9023385047912598
+      Y: 1.4228743314743042
     Saved: ~
 Window Geometry:
   Displays:
