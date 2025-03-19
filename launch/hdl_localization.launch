@@ -29,7 +29,7 @@
   <!-- 后面的是在机器人行走导航过程中的坐标转换 -->
   <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="T_lidar_helios" args="0.15 0 -0.4024 0 0.973383 0 0.229184  /velodyne /helios"/> -->
   <!-- 这是使用地面初始时刻落脚点高度为0，矫正的值 -->
-  <node pkg="tf2_ros" type="static_transform_publisher" name="T_lidar_helios" args="0.15 0 -0.4124 0 0.974739 0 0.223347  /velodyne /helios"/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="T_lidar_helios" args="0.15 0 -0.3924 0 0.974739 0 0.223347  /velodyne /helios"/>
 
   <node pkg="tf2_ros" type="static_transform_publisher" name="T_base_lidar" args="0.01 0 -0.7217 0 0 0 /velodyne /base_link"/>
 
@@ -43,7 +43,7 @@
     <!-- globalmap_server_nodelet -->
     <node pkg="nodelet" type="nodelet" name="globalmap_server_nodelet" args="load hdl_localization/GlobalmapServerNodelet $(arg nodelet_manager)">
       <!-- <param name="globalmap_pcd" value="/home/bhr/catkin_beijing4th/src/nav_needed_0212/scans.pcd" /> -->
-      <param name="globalmap_pcd" value="/home/bhr/catkin_localization/src/hdl_localization/data/scans.pcd" />
+      <param name="globalmap_pcd" value="/home/bhr/catkin_localization/src/hdl_localization/data/0319/scans.pcd" />
       <param name="convert_utm_to_local" value="true" />
       <param name="downsample_resolution" value="0.1" />
     </node>
@@ -87,5 +87,5 @@
 
     <node pkg="hdl_localization" type="plot_status.py" name="plot_estimation_errors" if="$(arg plot_estimation_errors)" />
 
-    <node name="globalmap_load" pkg="rosbag" type="play" output="screen" args="--clock --loop /home/bhr/catkin_localization/src/hdl_localization/data/global_elevationmap/globalmap1.bag" />
+    <node name="globalmap_load" pkg="rosbag" type="play" output="screen" args="--clock --loop /home/bhr/catkin_localization/src/hdl_localization/data/0319/globalmap.bag" />
 </launch>
